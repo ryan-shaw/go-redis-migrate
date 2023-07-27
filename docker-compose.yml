@@ -1,0 +1,6 @@
+version: '3'
+
+services: 
+  migrate:
+    build: .
+    command: -sourceHost localhost:6379 -targetHost localhost:6380 -debug

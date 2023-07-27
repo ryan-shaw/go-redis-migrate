@@ -23,6 +23,6 @@ The program keeps track of the number of executed commands in a thread-safe mann
 
 ## 🚨 Warning 🚨
 
-As specified in the Redis docs running `MONITOR` can have serious impact on performance, up to 50% performance hit depending on the workload. The (benchmark)[https://redis.io/commands/monitor/] exmaple is quite extreme as that is maxing the capabilities of Redis and hopefully your normal workload is not near 100% resource usage. I would seriously recommend ensuring their is enough resource capacity on your source Redis instance before running this program.
+As specified in the Redis docs running `MONITOR` can have serious impact on performance, up to 50% performance hit depending on the workload. The [benchmark](https://redis.io/commands/monitor/) exmaple is quite extreme as that is maxing the capabilities of Redis and hopefully your normal workload is not near 100% resource usage. I would seriously recommend ensuring their is enough resource capacity on your source Redis instance before running this program.
 
 It would be better to have this as a proxy to then proxy to both Redis instance but I want to have this without any modification to the stack.
